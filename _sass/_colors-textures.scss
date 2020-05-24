@@ -1,0 +1,43 @@
+// Basic Colors
+$almost-black:     #111111;
+$almost-white:     #FDFDFD;
+$black:            #000000;
+$white:            #FFFFFF;
+$bluish-white:     #EEEEFF;
+$nice-grey:        #555555;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Vanity Colors
+$clouds:           #ECF0F1; //whitish
+$rose-red:         #C21E56;
+$peter-river:      #3498DB; //light blue
+$emerald:          #2ECC71;
+$turquoise:        #1ABC9C;
+$wet-asphalt:      #34495E;
+$midnight-blue:    #2C3E50;
+$midnight-blue-light: #367FC5;
+$cool-blue:        #0074D9;
+$carrot:           #E67E22;
+$pumpkin:          #D35400;
+
+// Textures
+$paper-fibers:     url("/images/textures/paper_fibers.png");
+$squairy-light:    url("/images/textures/squairy_light.png");
+$linen:            url("/images/textures/linen.png");
+$grey-floral:      url("/images/textures/greyfloral.png");
+$seamless-paper:   url("/images/textures/seamless_paper_texture.png");
+$debut-light:      url("/images/textures/debut_light.png");
+$cream-dust:       url("/images/textures/cream_dust.png");
+$blu-stripes:      url("/images/textures/blu_stripes.png");
+$felt:             url("/images/textures/felt.png");
+$white-texture:    url("/images/textures/white_texture.png");
+$tweed:            url("/images/textures/tweed.png");
+$stardust:         url("/images/textures/stardust.png");
+$pixel-weave:      url("/images/textures/pixel_weave.png");
+$footer-lodyas:    url("/images/textures/footer_lodyas.png");
+$fabric-squares:   url("/images/textures/fabric_of_squares_gray.png");
+$wild-oliva:       url("/images/textures/wild_oliva.png");
+$shattered:        url("/images/textures/shattered.png");
+$subtle-dots:      url("/images/textures/subtle_dots.png");

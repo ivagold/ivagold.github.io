@@ -1,0 +1,46 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import style libraries:
+@import "colors-textures";
+@import "google-fonts";
+
+// Typography:
+$title-font-family:  $great-vibes;
+$base-font-family:   $ovo;
+$base-line-height: 1.5;
+$base-font-size:   20px;
+$site-title-font-size:  95px;
+$nav-font-size:        32px;
+$post-title-font-size: 35px;
+$post-link-font-size: 24px;
+$small-font-size:  $base-font-size * 0.875;
+
+// Colors:
+$nav-color:        $almost-white;
+$text-color:       $almost-black;
+$background-color: $almost-white;
+$brand-color:      $cool-blue;
+$site-title-color: $nav-color;
+$site-title-hover-color: $brand-color;
+$nav-text-shadow:  2px 2px 12px #000000;
+
+$spacing-unit:     30px;
+
+// Width of the content area:
+//$content-width:    1000px;
+$content-width:    500px; // Changing it for now, since I only have a single page with no blog.
+
+// Responsive breakpoints:
+$mobile:           700px;
+$laptop:           1000px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "mixins",
+    "base",
+    "layout",
+    "syntax-highlighting"
+;

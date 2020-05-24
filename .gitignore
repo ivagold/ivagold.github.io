@@ -1,0 +1,14 @@
+# Ignore the locally built Jekyll site, since GitHub Pages builds the site automatically.
+_site
+.jekyll-cache
+
+# Also ignore local blog post drafts.
+_drafts
+
+# SASS
+.sass-cache
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Thumbs.db

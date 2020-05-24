@@ -1,0 +1,134 @@
+body {
+    padding: $spacing-unit 0;
+    background: url("/images/bench.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/**
+ * Site header
+ */
+ .site-header {
+    padding-top: 100px;
+ }
+
+.site-title {
+    font-size: $site-title-font-size;
+    font-family: $title-font-family;
+    letter-spacing: -1px;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    &,
+    &:visited {
+        color: $site-title-color;
+        text-shadow: $nav-text-shadow;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $site-title-hover-color;
+    }
+
+    @include media-query(500px) {
+        font-size: $site-title-font-size * 0.75;
+    }
+    @include media-query(400px) {
+        font-size: $site-title-font-size * 0.55;
+    }
+}
+
+.site-nav {
+    ul {
+        list-style: outside none none;
+        display: block;
+        margin: 0 auto;
+        width: 460px;
+        font-size: $nav-font-size;
+
+        @include media-query(500px) {
+            width: 100%;
+            font-size: $nav-font-size * 0.9;
+        }
+
+        li {
+            display: inline-block;
+            margin: 30px 0 30px 40px;
+             @include media-query(500px) {
+                display: block;
+                margin: 0 0 0 30px;
+                text-align: center;
+            }
+        }
+    }
+
+    .page-link {
+        color: $nav-color;
+        text-shadow: $nav-text-shadow;
+        font-weight: bold;
+
+        /* Hover effect from http://ianlunn.github.io/Hover/ */
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            background: $brand-color;
+            height: 4px;
+            -webkit-transition-property: left, right;
+            transition-property: left, right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        &:hover:before, &:focus:before, &:active:before {
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+/**
+ * Site footer
+ */
+.footer-col-wrapper {
+    font-size: 16px;
+    padding-top: 20px;
+
+    a {
+        color: $text-color !important;
+    }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    .wrapper {
+        padding-top: 5px;
+        background-color: $background-color;
+        background: $subtle-dots;
+        @include rounded-border(10px, 1px, $almost-black);
+    }
+}
