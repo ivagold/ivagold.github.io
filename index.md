@@ -5,4 +5,4 @@ layout: page
 
 I'm a web developer in Philadelphia, PA.
 
-I currently work at the [Penn Libraries](https://www.library.upenn.edu/).
+I currently work at the [University of Pennsylvania](https://www.upenn.edu/).
